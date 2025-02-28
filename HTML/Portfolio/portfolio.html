@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Nagraj Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Nagraj hm, a web developer with a passion for creating dynamic and user-friendly websites. I have
+            experience in HTML, CSS, JavaScript, and other modern web technologies</p>
+    </section>
+    <section id="skills">
+        <h2>skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Reactjs</li>
+            <li>Node.jS</li>
+        </ul>
+    </section>
+    <section id="project">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: class HTML</h3>
+            <p>Here i came to Know how to use classes inside dev, li , ul tags etc</p>
+            <a href="https://github.com/12nagrajhm/HTML-CSS-Handson/blob/main/HTML/class.html" target="_blank">View On
+                Git Hub</a>
+        </div>
+        <div class="project">
+            <h3>Project 2: Layout design </h3>
+            <p>Here i designed an Layout using html, css from here i learned css and knew the impotance of whhy we use
+                css </p>
+            <a href="https://github.com/12nagrajhm/HTML-CSS-Handson/blob/main/HTML/Layout.html" target="_blank">View On
+                Git Hub</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">YOUR NAME:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 NAGRAJ HM. All Rights Are Reserved</p>
+    </footer>
+</body>
+
+</html>
