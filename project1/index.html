@@ -71,6 +71,23 @@
             font-size: 1.2rem;
         }
 
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+
+
         @media (max-width: 600px) {
             .product-list {
                 grid-template-columns: 1fr;
@@ -89,7 +106,8 @@
             <p class="price">$49.99</p>
         </li>
         <li>
-            <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Laptop">
+            <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Laptop">
             <h3>Product 2 - Laptop</h3>
             <p>A reliable and affordable laptop perfect for work and entertainment.</p>
             <p class="price">$39.99</p>
@@ -101,12 +119,15 @@
             <p class="price">$59.99</p>
         </li>
         <li>
-            <img src="https://images.pexels.com/photos/30930284/pexels-photo-30930284/free-photo-of-mockup-of-tablet-with-keyboard-and-blank-screen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tablet">
+            <img src="https://images.pexels.com/photos/30930284/pexels-photo-30930284/free-photo-of-mockup-of-tablet-with-keyboard-and-blank-screen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Tablet">
             <h3>Product 4 - Tablet</h3>
             <p>A sleek and powerful tablet designed for multitasking and media consumption.</p>
             <p class="price">$79.99</p>
         </li>
     </ul>
+    <button type="submit">submit</button>
+
 </body>
 
 </html>
