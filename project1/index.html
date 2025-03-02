@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0;
+        }
+
+        .product-list li {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .product-list li:hover {
+            transform: scale(1.07);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-color: #e44d26;
+        }
+
+        .product-list img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .product-list li:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-list h3 {
+            margin: 10px 0;
+            font-size: 1.4rem;
+            color: #222;
+        }
+
+        .product-list p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e44d26;
+            font-size: 1.2rem;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+
+
+        @media (max-width: 600px) {
+            .product-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Product Listing</h2>
+    <ul class="product-list">
+        <li>
+            <img src="https://images.pexels.com/photos/1786433/pexels-photo-1786433.jpeg" alt="Mobile">
+            <h3>Product 1 - Mobile</h3>
+            <p>A high-quality smartphone with excellent battery life and camera performance.</p>
+            <p class="price">$49.99</p>
+        </li>
+        <li>
+            <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Laptop">
+            <h3>Product 2 - Laptop</h3>
+            <p>A reliable and affordable laptop perfect for work and entertainment.</p>
+            <p class="price">$39.99</p>
+        </li>
+        <li>
+            <img src="https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg" alt="Camera">
+            <h3>Product 3 - Camera</h3>
+            <p>A stylish and modern camera for capturing high-resolution photos and videos.</p>
+            <p class="price">$59.99</p>
+        </li>
+        <li>
+            <img src="https://images.pexels.com/photos/30930284/pexels-photo-30930284/free-photo-of-mockup-of-tablet-with-keyboard-and-blank-screen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Tablet">
+            <h3>Product 4 - Tablet</h3>
+            <p>A sleek and powerful tablet designed for multitasking and media consumption.</p>
+            <p class="price">$79.99</p>
+        </li>
+    </ul>
+    <button type="submit">submit</button>
+
+</body>
+
+</html>

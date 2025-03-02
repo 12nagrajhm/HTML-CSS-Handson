@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #343a40;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li:hover {
+            color: #28a745;
+        }
+
+        .container {
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .pet-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .pet-card:hover {
+            transform: scale(1.05);
+        }
+
+        .pet-card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li onclick="scrollToPet('cat')">Cat</li>
+            <li onclick="scrollToPet('dog')">Dog</li>
+            <li onclick="scrollToPet('cow')">Cow</li>
+            <li onclick="scrollToPet('horse')">Horse</li>
+            <li onclick="scrollToPet('parrot')">Parrot</li>
+            <li onclick="scrollToPet('rabbit')">Rabbit</li>
+            <li onclick="scrollToPet('fish')">Gold Fish</li>
+            <li onclick="scrollToPet('duck')">Duck</li>
+            <li onclick="scrollToPet('hen')">Hen</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="pet-card" id="cat">
+            <img src="https://images.pexels.com/photos/30895339/pexels-photo-30895339/free-photo-of-beautiful-tabby-cat-sitting-on-wooden-stairs.jpeg"
+                alt="Cat">
+            <h3>Cat</h3>
+            <p>Friendly and independent, cats make great indoor pets.</p>
+            <p class="price">₹8,000</p>
+        </div>
+        <div class="pet-card" id="dog">
+            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Dog">
+            <h3>Dog</h3>
+            <p>Loyal and loving, perfect for companionship.</p>
+            <p class="price">₹15,000</p>
+        </div>
+        <div class="pet-card" id="cow">
+            <img src="https://images.pexels.com/photos/16112876/pexels-photo-16112876/free-photo-of-cow-in-barn.jpeg"
+                alt="Cow">
+            <h3>Cow</h3>
+            <p>Provides fresh milk and is a symbol of prosperity.</p>
+            <p class="price">₹40,000</p>
+        </div>
+        <div class="pet-card" id="horse">
+            <img src="https://images.pexels.com/photos/1996338/pexels-photo-1996338.jpeg" alt="Horse">
+            <h3>Horse</h3>
+            <p>Elegant and strong, great for riding and sports.</p>
+            <p class="price">₹1,00,000</p>
+        </div>
+        <div class="pet-card" id="parrot">
+            <img src="https://images.pexels.com/photos/1427447/pexels-photo-1427447.jpeg" alt="Parrot">
+            <h3>Parrot</h3>
+            <p>Colorful and intelligent, can mimic human speech.</p>
+            <p class="price">₹5,000</p>
+        </div>
+        <div class="pet-card" id="rabbit">
+            <img src="https://images.pexels.com/photos/104373/pexels-photo-104373.jpeg" alt="Rabbit">
+            <h3>Rabbit</h3>
+            <p>Soft, playful, and easy to take care of.</p>
+            <p class="price">₹3,000</p>
+        </div>
+        <div class="pet-card" id="fish">
+            <img src="https://images.pexels.com/photos/325044/pexels-photo-325044.jpeg" alt="Fish">
+            <h3>Gold Fish</h3>
+            <p>Brings good luck and is easy to maintain.</p>
+            <p class="price">₹500</p>
+        </div>
+        <div class="pet-card" id="duck">
+            <img src="https://images.pexels.com/photos/221429/pexels-photo-221429.jpeg" alt="Duck">
+            <h3>Duck</h3>
+            <p>Friendly and can be kept as a backyard pet.</p>
+            <p class="price">₹2,000</p>
+        </div>
+        <div class="pet-card" id="hen">
+            <img src="https://images.pexels.com/photos/1216482/pexels-photo-1216482.jpeg" alt="Hen">
+            <h3>Hen</h3>
+            <p>Provides fresh eggs daily, easy to raise.</p>
+            <p class="price">₹1,500</p>
+        </div>
+    </div>
+    <script>
+        function scrollToPet(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
